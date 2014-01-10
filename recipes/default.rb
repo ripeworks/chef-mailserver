@@ -710,8 +710,8 @@ postgresql_database 'mailconfig-create-tables' do
 end
 
 include_recipe "mailserver::dovecot"
+include_recipe "mailserver::spamassassin"
 include_recipe "mailserver::amavis"
 include_recipe "mailserver::clamav"
-include_recipe "mailserver::spamassassin"
 include_recipe "mailserver::postfix"
 # include_recipe "mailserver::postfixadmin"
